@@ -1,10 +1,14 @@
 import styles from './category.module.css';
 
-const Category = () => {
+const Category = ({ id, title, imageUrl }) => {
   return (
-    <div className={styles.category}>
+    <div
+      id={`category-${id}`}
+      className={styles.category}
+      style={{ backgroundImage: `url('${imageUrl}')` }}
+    >
       <div className={styles.content}>
-        <h2 className={styles.title}>Title</h2>
+        <h2 className={styles.title}>{title}</h2>
         <h3 className={styles.subtitle}>Subtitle</h3>
       </div>
     </div>

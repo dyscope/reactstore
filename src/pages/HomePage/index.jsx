@@ -1,5 +1,5 @@
 import React from 'react';
-import Categories from '../../Categories';
+import Categories from '../../components/Categories';
 import styles from './homepage.module.css';
 
 const HomePage = () => {
