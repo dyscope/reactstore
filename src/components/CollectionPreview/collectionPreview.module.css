@@ -1,0 +1,13 @@
+.collection_preview {
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+}
+.preview {
+  display: flex;
+  justify-content: space-between;
+}
+.title {
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}

@@ -1,10 +1,13 @@
+import React from 'react';
+import { withRouter } from 'react-router-dom';
 import styles from './category.module.css';
 
-const Category = ({ id, title, imageUrl, size }) => {
+const Category = ({ id, title, imageUrl, size, history, linkUrl, match }) => {
   return (
     <div
       id={`category-${id}`}
       className={`${styles.category} ${size ? styles.large : ''}`}
+      onClick={() => history.push(`${match.url}${linkUrl}`)}
     >
       <div
         className={styles.backgroundImg}
@@ -18,4 +21,4 @@ const Category = ({ id, title, imageUrl, size }) => {
   );
 };
 
-export default Category;
+export default withRouter(Category);

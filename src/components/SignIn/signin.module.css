@@ -1,0 +1,32 @@
+.auth-form {
+  width: 320px;
+  padding: 1.5rem 2rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}
+.auth-form-header {
+  margin-bottom: 25px;
+  text-align: center;
+}
+.auth-form-body {
+  width: 100%;
+}
+.field-box {
+  width: 100%;
+  font-size: 1rem;
+  margin-top: 2.8rem;
+}
+.field-box label {
+  display: block;
+  width: 100%;
+  margin-bottom: 5px;
+}
+.field-box input {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 1.1rem;
+  border-radius: 6px;
+  padding: 8px;
+  border: 1px solid var(--border);
+}

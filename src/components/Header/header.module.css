@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 58px;
+  align-items: center;
+}
+.logo_container {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  height: 38px;
+  transition: 0.3s all ease-in-out;
+}
+.logo {
+  height: 30px;
+  width: 30px;
+  margin-right: 8px;
+  fill: var(--veryperi);
+  transition: 0.3s all ease-in-out;
+}
+.logo_container:hover .logo {
+  transition: 0.3s all ease-in-out;
+  fill: var(--bouquet);
+}
+
+.brand {
+  font-size: 2rem;
+  line-height: 1;
+  font-family: 'Chewy', cursive;
+  color: var(--veryperi);
+  padding-top: 6px;
+  transition: 0.3s all ease-in-out;
+}
+.logo_container:hover .brand {
+  transition: 0.3s all ease-in-out;
+  color: var(--bouquet);
+}
+.header_menu {
+  display: flex;
+}
+.header_menu a {
+  font-family: 'Roboto', sans-serif;
+  color: var(--veryperi-darker);
+  text-decoration: none;
+  font-size: 1.1rem;
+  margin-left: 2rem;
+  transition: 0.2s all ease-in-out;
+}
+.header_menu a:hover {
+  transition: 0.2s all ease-in-out;
+  color: var(--bouquet);
+}

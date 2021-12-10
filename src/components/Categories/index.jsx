@@ -47,14 +47,8 @@ class Categories extends React.Component {
   render() {
     return (
       <div className={styles.categories}>
-        {this.state.sections.map(({ id, title, imageUrl, size }) => (
-          <Category
-            key={id}
-            id={id}
-            title={title}
-            imageUrl={imageUrl}
-            size={size}
-          />
+        {this.state.sections.map(({ id, ...otherSectionProps }) => (
+          <Category key={id} {...otherSectionProps} />
         ))}
       </div>
     );

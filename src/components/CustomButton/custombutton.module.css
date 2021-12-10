@@ -1,0 +1,16 @@
+.custom-btn {
+  cursor: pointer;
+  border: none;
+  background-color: var(--froly);
+  color: #fff;
+  transition: 0.3s all ease-in-out;
+  display: block;
+  width: 100%;
+  padding: 8px 0;
+  font-size: 1.1rem;
+  border: none;
+}
+.custom-btn:hover {
+  transition: 0.3s all ease-in-out;
+  background-color: #df6287;
+}

@@ -1,0 +1,26 @@
+.field-box {
+  width: 100%;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+.field-box label {
+  display: block;
+  width: 100%;
+}
+.field-box input {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 1.1rem;
+  padding: 8px 0;
+  border: none;
+  border-bottom: 1px solid var(--veryperi);
+}
+.field-box input:focus-visible {
+  outline: none;
+  border-bottom: 1px solid var(--froly);
+}
+.field-box input.st-btn {
+  border: none;
+  margin-top: 30px;
+}
