@@ -1,7 +1,7 @@
 .custom-btn {
   cursor: pointer;
   border: none;
-  background-color: var(--froly);
+  background-color: var(--bouquet);
   color: #fff;
   transition: 0.3s all ease-in-out;
   display: block;
@@ -13,4 +13,7 @@
 .custom-btn:hover {
   transition: 0.3s all ease-in-out;
   background-color: #df6287;
+}
+.google-sign-btn {
+  background-color: var(--veryperi);
 }

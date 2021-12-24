@@ -1,10 +1,10 @@
 import React from 'react';
-import SignIn from '../../components/SignIn';
+import ServiceLogin from '../../components/ServiceLogin';
 
 const Login = () => {
   return (
     <div className="container">
-      <SignIn />
+      <ServiceLogin />
     </div>
   );
 };

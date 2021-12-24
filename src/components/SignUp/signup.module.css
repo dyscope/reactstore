@@ -1,14 +1,14 @@
-.auth-form {
+.signup-form {
   width: 320px;
   padding: 1.5rem 2rem;
   border: 1px solid var(--border);
   border-radius: 6px;
 }
-.auth-form-header {
+.signup-form-header {
   margin-bottom: 25px;
   text-align: center;
 }
-.auth-form-body {
+.signup-form-body {
   width: 100%;
 }
 .field-box {

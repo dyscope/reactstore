@@ -3,7 +3,7 @@
 .header {
   display: flex;
   justify-content: space-between;
-  height: 58px;
+  height: 70px;
   align-items: center;
 }
 .logo_container {
@@ -40,15 +40,18 @@
 .header_menu {
   display: flex;
 }
-.header_menu a {
+.header_menu a,
+.signout_link {
   font-family: 'Roboto', sans-serif;
   color: var(--veryperi-darker);
   text-decoration: none;
   font-size: 1.1rem;
   margin-left: 2rem;
   transition: 0.2s all ease-in-out;
+  cursor: pointer;
 }
-.header_menu a:hover {
+.header_menu a:hover,
+.signout_link:hover {
   transition: 0.2s all ease-in-out;
   color: var(--bouquet);
 }

@@ -2,8 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './header.module.css';
 import { ReactComponent as Logo } from '../../assets/img/logo.svg';
+import { auth } from '../../firebase/firebase.utils';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSignOutAlt } from '@fortawesome/free-solid-svg-icons';
 
-const Header = () => {
+const Header = ({ currentUser }) => {
   return (
     <div className="container">
       <div className={styles.header}>
@@ -14,7 +17,16 @@ const Header = () => {
         <div className={styles.header_menu}>
           <Link to="/shop">Shop</Link>
           <Link to="/contact">Contact</Link>
-          <Link to="/login">Log in</Link>
+          {currentUser ? (
+            <Link to="/profile">{currentUser.displayName}</Link>
+          ) : null}
+          {currentUser ? (
+            <div className={styles.signout_link} onClick={() => auth.signOut()}>
+              <FontAwesomeIcon icon={faSignOutAlt} title="Sign out" />
+            </div>
+          ) : (
+            <Link to="/login">Log in</Link>
+          )}
         </div>
       </div>
     </div>

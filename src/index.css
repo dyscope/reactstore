@@ -9,7 +9,9 @@
   --mango: #ffc668;
   --border: hsl(210deg 18% 87%);
 }
-
+* {
+  box-sizing: border-box;
+}
 html {
   font-size: 100%;
 }
@@ -47,6 +49,8 @@ a:visited {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 input:focus-visible {
   outline: 1px solid var(--tangerine);
